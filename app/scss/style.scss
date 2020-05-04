@@ -484,16 +484,22 @@
 // start product_item_horizont
 
 .product__item-horizont {
-  display: flex;  
-   position: relative;
   
+   position: relative;
+  background-color: #fff;
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
   margin-bottom: 30px;
 
   &-wrapper {
-    max-width: 300px;
+    background-color: #fff;
+    margin-left: 562px;
+    height: 450px;
+    max-width: 600px;
+    border-right: #fff 2px solid;
   }
+
   
+
   &:hover {
     .product__item-img {
       background-image: -webkit-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
@@ -505,9 +511,41 @@
       color: #fff;
     }
   }
-  &-img {
-    height: 230px;
-    width: 260px;
+
+  &-inner-btn {
+    height: 90px;  
+    background-color: #fff;
+    color: #898f96;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 24px;
+    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+
+  button {
+    padding: 12px 21px;
+    border: none;
+    background-color: #f1f3f6;
+    color: $bg;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color:#0674ec ;
+      color: #fff;
+    }
+    & + button {
+      margin-left: 5px;
+    }
+    // &.mixitup-control-active {
+    //   background-color: $red;
+    //   color: #fff;
+    // }
+  }
+}  
+
+  &-button-panel {
+    position: absolute;
+    height: 450px;
+    width: 555px;
     background-color: #009688;
   }
 
@@ -759,10 +797,10 @@
     & + button {
       margin-left: 5px;
     }
-    &.mixitup-control-active {
-      background-color: $red;
-      color: #fff;
-    }
+    // &.mixitup-control-active {
+    //   background-color: $red;
+    //   color: #fff;
+    // }
   }
 }
 

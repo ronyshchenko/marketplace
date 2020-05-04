@@ -10,7 +10,8 @@ $(function(){
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  arrows: false
   });
 
   $('.product-slider__inner').slick({
